@@ -92,13 +92,22 @@ cp mariadb-java-client-3.3.0.jar ejbca/lib/
 
 
 
-8. **Build and Deploy:**
+#### 7. **Build and Deploy:**
+   From the EJBCA directory, run:
 ```
 ant deploy
 ant install
 ```
+This will create the required tables in the `ejbca` database.
 
-5. **Access the Web UI:**
+#### 8. **Verify the Setup**
+    Check if tables were created:
+   ```
+   sudo mysql -u ejbca -p ejbca -e "SHOW TABLES;"
+   ```
+   
+
+#### 9. **Access the Web UI:**
 
    Visit `http://localhost:8080/ejbca/adminweb/`.
 
