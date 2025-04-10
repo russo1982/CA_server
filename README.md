@@ -14,8 +14,9 @@ sudo apt install openjdk-17-jdk mariadb-server ant
 
 #### 2. **Download EJBCA:**
 ```
-wget https://sourceforge.net/projects/ejbca/files/ejbca7/ejbca_7_9_0.zip
-unzip ejbca_7_9_0.zip
+wget https://sourceforge.net/projects/ejbca/files/ejbca7/ejbca_ce_7_9_0_2.zip/download
+mv download ejbca_ce_7_9_0_2.zip
+unzip ejbca_ce_7_9_0_2.zip
 ```
 
 #### 3. **Secure MariaDB Installation:**
