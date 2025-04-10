@@ -82,12 +82,13 @@ database.password=ejbca_password
 6.2 **Install MariaDB JDBC Driver:**
 Download the MariaDB JDBC driver:
 ```
-wget https://downloads.mariadb.com/Connectors/java/connector-j-3.3.0/mariadb-java-client-3.3.0.jar
+wget https://dbschema.com/jdbc-drivers/MariaDbJdbcDriver.zip
+unzip MariaDbJdbcDriver.zip
 ```
 
 Copy it to EJBCA's `lib` folder:
 ```
-cp mariadb-java-client-3.3.0.jar ejbca/lib/
+cp mariadb-java-client-3.5.3.jar ejbca/lib/
 ```
 ---
 
