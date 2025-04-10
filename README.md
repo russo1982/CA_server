@@ -105,9 +105,30 @@ This will create the required tables in the `ejbca` database.
    ```
    sudo mysql -u ejbca -p ejbca -e "SHOW TABLES;"
    ```
-   
+   You should see EJBCA-specific tables like `UserData`, `RoleData`, etc.
 
 #### 9. **Access the Web UI:**
 
    Visit `http://localhost:8080/ejbca/adminweb/`.
+
+___
+
+### Troubleshooting
+
+#### 1. Connection Issues:
+- Ensure MariaDB is running: `sudo systemctl status mariadb`.
+- Verify credentials in `database.properties`.
+- Check firewall rules if using a remote database.
+
+#### 2. JDBC Driver Errors:
+- Confirm the JDBC driver JAR is in `ejbca/lib/`.
+
+#### 3. Character Encoding Issues:
+- Ensure `utf8mb4` is configured in both MariaDB and EJBCA.
+
+___
+
+### Next Steps
+
+Proceed with configuring EJBCA and accessing its web interface at `http://localhost:8080/ejbca/adminweb/`.
 
